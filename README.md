@@ -44,23 +44,23 @@ Colony addresses three core challenges in fog-assisted IIoT systems:
 │                        Colony Framework                              │
 │                                                                      │
 │  Phase 1          Phase 2          Phase 3          Phase 4          │
-│  ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────────┐   │
-│  │ System   │───▶│ IIoT     │───▶│ Workload │───▶│ Stability-   │   │
-│  │ Init     │    │ Protect  │    │ Profiling│    │ Aware LB     │   │
-│  │ (PUF,    │    │ (ChaCha, │    │ (Gateway,│    │ (Election,   │   │
-│  │  Kyber,  │    │  Kyber   │    │  Batch,  │    │  FRI, Sched, │   │
-│  │  CP-ABE) │    │  KDF)    │    │  ω/δ/ρ)  │    │  Replication)│   │
-│  └──────────┘    └──────────┘    └──────────┘    └──────┬───────┘   │
-│                                                         │           │
-│                                                         ▼           │
+│  ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────────┐    │
+│  │ System   │───▶│ IIoT     │───▶│ Workload │───▶│ Stability-   │    │
+│  │ Init     │    │ Protect  │    │ Profiling│    │ Aware LB     │    │
+│  │ (PUF,    │    │ (ChaCha, │    │ (Gateway,│    │ (Election,   │    │
+│  │  Kyber,  │    │  Kyber   │    │  Batch,  │    │  FRI, Sched, │    │
+│  │  CP-ABE) │    │  KDF)    │    │  ω/δ/ρ)  │    │  Replication)│    │
+│  └──────────┘    └──────────┘    └──────────┘    └──────┬───────┘    │
+│                                                         │            │
+│                                                         ▼            │
 │                  Phase 6          Phase 5                            │
-│                 ┌──────────┐    ┌──────────────┐                    │
-│                 │ Recovery │◀───│ Resource     │                    │
-│                 │ & Results│    │ Assistance   │                    │
-│                 │ (Failover│    │ (Helper Sel, │                    │
-│                 │  CP-ABE  │    │  Collab,     │                    │
-│                 │  AES-GCM)│    │  Offloading) │                    │
-│                 └──────────┘    └──────────────┘                    │
+│                 ┌──────────┐    ┌──────────────┐                     │
+│                 │ Recovery │◀───│ Resource     │                     │
+│                 │ & Results│    │ Assistance   │                     │
+│                 │ (Failover│    │ (Helper Sel, │                     │
+│                 │  CP-ABE  │    │  Collab,     │                     │
+│                 │  AES-GCM)│    │  Offloading) │                     │
+│                 └──────────┘    └──────────────┘                     │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
